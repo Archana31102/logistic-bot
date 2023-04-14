@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dazzle Dresses</title>
+    <link rel="icon" href="images/tabimg.jpeg" />
+     <!-- Google Fonts -->
+     <link
+     href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+     rel="stylesheet"
+   />
+
+   <!-- Font Awesome cdn -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
+   <!-- Bootstrap -->
+   <link
+     rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+     crossorigin="anonymous"
+   />
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+     crossorigin="anonymous"
+   />
+   <link
+     rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+   />
+
+   <script
+     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+     crossorigin="anonymous"
+   ></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+   <!--External CSS-->
+   <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--***** Back to top button *****-->
+    <a title="scroll to top" id="button"></a>
+  
+    <!--***** Nav Bar *****-->
+    <nav class="navbar navbar-expand-lg">
+      <img src="images/logo.jpeg" alt="Logo" class="navbarlogo rounded-circle" />
+      <div class="navbar-brand" >DAZZLE DRESSES</div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#title"
+              ><i class="fas fa-home"></i>&nbsp;Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#features"
+              ><i class="fas fa-ribbon"></i>&nbsp;Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#contact"
+              ><i class="fas fa-phone"></i>&nbsp;Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--***** Title *****-->
+    
+    <section class="coloured-section" id="title">
+        <div class="container-fluid">
+          <img src="images/bg.jpeg" alt="Logo" id="bg" />          
+            <div class="block">
+              <h1 class="big-heading">
+
+
+                
+                “ FASHION IS WHAT YOU BUY,
+                STYLE IS WHAT YOU DO WITH IT !!”
+              </h1>
+            </div>
+            
+            <div>
+              <button class="chat-btn"> 
+                <i class="material-icons"> comment </i>
+            </button>
+
+        </div>
+        
+            <div class="chat-popup">
+              <div class="media" >
+                <img src="./images/clara.jpg" class="rounded-circle float-left img-thumbnail" alt="...">
+                <div class="media-body">
+                  <h5 style="margin:10px">CLARA</h5>
+                    <span style="margin-left: 10 px; line-height:5px ; color:rgb(56, 158, 163)">Online</span>
+                </div>
+              </div>
+                <div id="chatContainer" class="chat-area container  overflow-auto" >
+                  
+                </div>
+    
+                <div class="input-area">
+                    <input id="textbox" type="text">
+                    <button id="emoji-btn"> &#127773;</button>
+                    <button  class="submit"> <i id="sendBtn" class="material-icons"> send</i></button>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+   <!--***** Services *****-->
+   <section id="features" class="features">
+    <div class="secf">
+      OUR PRODUCTS
+    </div>
+<section class="slideshow">
+<div class="slideshow-container slide">
+  <div class="cont s--inactive">
+    <!-- cont inner start -->
+    <div class="cont__inner">
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Kids</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Kids wear</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Ethnic</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Ethnic wear</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Womens</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Womens wear</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Traditional</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Traditional wear</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start -->
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Mens</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Mens wear</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+    </div>
+    <!-- cont inner end -->
+  </div>
+  
+</div>
+</section>
+  
+<!--***** Contact Us *****-->
+<section id="contact">
+  
+  <h2 class="section-header">Contact</h2>
+  
+  <div class="contact-wrapper">
+  
+  <!-- Left contact page --> 
+    
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="name" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" >
+        <div class="alt-send-button">
+          
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  <!-- right contact page --> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chennai, Tamilnadu</span></i></li>
+
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">archanabe03@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="https://github.com/Archana31102" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="archanabe03@gmail.com" target="_blank" class="contact-icon">
+            <i class="fa fa-envelope " aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/g-archana/" target="_blank" class="contact-icon">
+            <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>      
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+</section>  
+
+ <!--***** Services *****
+ <section id="features" class="features">
+  <div class="secf">
+    OUR Products
+  </div>
+  <section class="gallery">
+    
+  <div class="cont s--inactive">
+    <!-- cont inner start 
+    <div class="cont__inner">
+      <!-- el start 
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Section 1</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Whatever</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">1</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="1">1</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start 
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Section 2</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Whatever</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">2</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="2">2</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start 
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Section 3</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Whatever</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">3</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="3">3</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start 
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Section 4</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Whatever</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">4</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="4">4</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end -->
+      <!-- el start 
+      <div class="el">
+        <div class="el__overflow">
+          <div class="el__inner">
+            <div class="el__bg"></div>
+            <div class="el__preview-cont">
+              <h2 class="el__heading">Section 5</h2>
+            </div>
+            <div class="el__content">
+              <div class="el__text">Whatever</div>
+              <div class="el__close-btn"></div>
+            </div>
+          </div>
+        </div>
+        <div class="el__index">
+          <div class="el__index-back">5</div>
+          <div class="el__index-front">
+            <div class="el__index-overlay" data-index="5">5</div>
+          </div>
+        </div>
+      </div>
+      <!-- el end 
+    </div>
+    <!-- cont inner end 
+  </div>
+ 
+</section>
+
+<!--***** Contact Us *****
+<section id="contact">
+  
+  <h2 class="section-header">Contact</h2>
+  
+  <div class="contact-wrapper">
+  
+  <!-- Left contact page 
+    
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" >
+        <div class="alt-send-button">
+          
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  <!-- right contact page 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Chennai, Tamilnadu</span></i></li>
+          
+          <li class="list-item"><i class="fab fa-linkedin fa-2x"><span class="contact-text media"><a href="https://www.linkedin.com/in/g-archana/" title="Follow me">linkedin.com/in/g-archana</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">archanabe03@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="https://github.com/Archana31102" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="archanabe03@gmail.com" target="_blank" class="contact-icon">
+            <i class="fa fa-envelope " aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/g-archana/" target="_blank" class="contact-icon">
+            <i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </li>      
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+</section>  
+
+</section>
+-->
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
